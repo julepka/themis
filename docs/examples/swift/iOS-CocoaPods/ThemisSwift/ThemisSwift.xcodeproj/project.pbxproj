@@ -254,7 +254,7 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ThemisSwift/Pods-ThemisSwift-frameworks.sh",
-				"${PODS_ROOT}/CLOpenSSL/openssl-dynamic-iPhone.zip/openssl.framework",
+				"${PODS_ROOT}/GRKOpenSSLFramework/OpenSSL-iOS/bin/openssl.framework",
 				"${BUILT_PRODUCTS_DIR}/themis/themis.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -424,6 +424,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/ThemisSwift/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.cossacklabs.ThemisSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -448,6 +449,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/ThemisSwift/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.cossacklabs.ThemisSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
