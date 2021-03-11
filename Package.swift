@@ -15,9 +15,9 @@ let package = Package(
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .binaryTarget(name: "themis",
-                      url: "https://github.com/julepka/themis/releases/download/0.15/themis.xcframework.zip",
+                      url: "https://github.com/julepka/themis/releases/download/0.15.1/themis.xcframework.zip",
                       // $swift package compute-checksum output/themis.xcframework.zip
-                      checksum: "425c2279e35c992a47ff1d23922e1cb46f18ea7af254df8c5fd1b95a0441e799"),
+                      checksum: "d894fc82df1fbf7542afca0971455a37e843888519bf355ba757bbfef1137a77"),
 
     ]
 )
