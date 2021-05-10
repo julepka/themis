@@ -919,6 +919,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				6D1D2CC42649684A00D78E87 /* PBXTargetDependency */,
 			);
 			name = "Themis (macOS)";
 			packageProductDependencies = (
@@ -939,6 +940,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				6D1D2CC22649684400D78E87 /* PBXTargetDependency */,
 			);
 			name = "Themis (iOS)";
 			packageProductDependencies = (
@@ -1318,6 +1320,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		6D1D2CC22649684400D78E87 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 6D1D2CC12649684400D78E87 /* cl-openssl */;
+		};
+		6D1D2CC42649684A00D78E87 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 6D1D2CC32649684A00D78E87 /* cl-openssl */;
+		};
 		9F70B2C3241D0FEC009CB629 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 9F00E8D6223C197900EC1EF3 /* Themis (macOS) */;
@@ -1885,6 +1895,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		6D1D2CC12649684400D78E87 /* cl-openssl */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6DDCC79A2649577000F02319 /* XCRemoteSwiftPackageReference "openssl-apple" */;
+			productName = "cl-openssl";
+		};
+		6D1D2CC32649684A00D78E87 /* cl-openssl */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6DDCC79A2649577000F02319 /* XCRemoteSwiftPackageReference "openssl-apple" */;
+			productName = "cl-openssl";
+		};
 		6DDCC79B2649577000F02319 /* cl-openssl */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 6DDCC79A2649577000F02319 /* XCRemoteSwiftPackageReference "openssl-apple" */;
