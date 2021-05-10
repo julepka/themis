@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6DDCC79C2649577000F02319 /* cl-openssl in Frameworks */ = {isa = PBXBuildFile; productRef = 6DDCC79B2649577000F02319 /* cl-openssl */; };
-		6DDCC79E2649578200F02319 /* cl-openssl in Frameworks */ = {isa = PBXBuildFile; productRef = 6DDCC79D2649578200F02319 /* cl-openssl */; };
+		6D1D2CC626496EA000D78E87 /* openssl.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D1D2CC526496EA000D78E87 /* openssl.xcframework */; };
+		6D1D2CC726496EA000D78E87 /* openssl.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6D1D2CC526496EA000D78E87 /* openssl.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6D1D2CCA26496EAD00D78E87 /* openssl.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D1D2CC526496EA000D78E87 /* openssl.xcframework */; };
+		6D1D2CCB26496EAD00D78E87 /* openssl.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6D1D2CC526496EA000D78E87 /* openssl.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9F00E8E2223C1A3300EC1EF3 /* objcthemis.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F4A24B5223A8FA8005CB63A /* objcthemis.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9F00E8E3223C1A3300EC1EF3 /* scell_context_imprint.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F4A24B9223A8FA8005CB63A /* scell_context_imprint.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9F00E8E4223C1A3300EC1EF3 /* scell_seal.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F4A24BC223A8FA8005CB63A /* scell_seal.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -281,6 +283,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		6D1D2CC826496EA000D78E87 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6D1D2CC726496EA000D78E87 /* openssl.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D1D2CCC26496EAD00D78E87 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6D1D2CCB26496EAD00D78E87 /* openssl.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9F70B2DE241D172E009CB629 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -328,6 +352,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6D1D2CC526496EA000D78E87 /* openssl.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = openssl.xcframework; path = ../../../../Downloads/openssl.xcframework; sourceTree = "<group>"; };
 		9F00E8D7223C197900EC1EF3 /* themis.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = themis.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F00E940223C1AFA00EC1EF3 /* openssl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = openssl.framework; path = Carthage/Build/Mac/openssl.framework; sourceTree = "<group>"; };
 		9F0BBCE824E6FC810073CA52 /* themis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = themis.h; path = "src/wrappers/themis/Obj-C/Themis/themis.h"; sourceTree = "<group>"; };
@@ -511,7 +536,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DDCC79E2649578200F02319 /* cl-openssl in Frameworks */,
+				6D1D2CCA26496EAD00D78E87 /* openssl.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -519,7 +544,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DDCC79C2649577000F02319 /* cl-openssl in Frameworks */,
+				6D1D2CC626496EA000D78E87 /* openssl.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -751,6 +776,7 @@
 		9F4A2476223A885F005CB63A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6D1D2CC526496EA000D78E87 /* openssl.xcframework */,
 				9F70B2DC241D16A9009CB629 /* iOS */,
 				9F70B2DB241D16A2009CB629 /* macOS */,
 			);
@@ -915,15 +941,14 @@
 				9F00E8D2223C197900EC1EF3 /* Headers */,
 				9F00E8D3223C197900EC1EF3 /* Sources */,
 				9F00E8D4223C197900EC1EF3 /* Frameworks */,
+				6D1D2CCC26496EAD00D78E87 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				6D1D2CC42649684A00D78E87 /* PBXTargetDependency */,
 			);
 			name = "Themis (macOS)";
 			packageProductDependencies = (
-				6DDCC79D2649578200F02319 /* cl-openssl */,
 			);
 			productName = "Themis (macOS)";
 			productReference = 9F00E8D7223C197900EC1EF3 /* themis.framework */;
@@ -936,15 +961,14 @@
 				9F4A249C223A8D7F005CB63A /* Headers */,
 				9F4A249D223A8D7F005CB63A /* Sources */,
 				9F4A249E223A8D7F005CB63A /* Frameworks */,
+				6D1D2CC826496EA000D78E87 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				6D1D2CC22649684400D78E87 /* PBXTargetDependency */,
 			);
 			name = "Themis (iOS)";
 			packageProductDependencies = (
-				6DDCC79B2649577000F02319 /* cl-openssl */,
 			);
 			productName = Themis;
 			productReference = 9F4A24A1223A8D7F005CB63A /* themis.framework */;
@@ -1060,7 +1084,6 @@
 			);
 			mainGroup = 738B81052239809D00A9947C;
 			packageReferences = (
-				6DDCC79A2649577000F02319 /* XCRemoteSwiftPackageReference "openssl-apple" */,
 			);
 			productRefGroup = 738B81102239809D00A9947C /* Products */;
 			projectDirPath = "";
@@ -1320,14 +1343,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		6D1D2CC22649684400D78E87 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			productRef = 6D1D2CC12649684400D78E87 /* cl-openssl */;
-		};
-		6D1D2CC42649684A00D78E87 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			productRef = 6D1D2CC32649684A00D78E87 /* cl-openssl */;
-		};
 		9F70B2C3241D0FEC009CB629 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 9F00E8D6223C197900EC1EF3 /* Themis (macOS) */;
@@ -1558,6 +1573,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 8;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -1603,6 +1619,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 8;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -1882,40 +1899,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		6DDCC79A2649577000F02319 /* XCRemoteSwiftPackageReference "openssl-apple" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/cossacklabs/openssl-apple";
-			requirement = {
-				kind = exactVersion;
-				version = 1.1.11101;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		6D1D2CC12649684400D78E87 /* cl-openssl */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 6DDCC79A2649577000F02319 /* XCRemoteSwiftPackageReference "openssl-apple" */;
-			productName = "cl-openssl";
-		};
-		6D1D2CC32649684A00D78E87 /* cl-openssl */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 6DDCC79A2649577000F02319 /* XCRemoteSwiftPackageReference "openssl-apple" */;
-			productName = "cl-openssl";
-		};
-		6DDCC79B2649577000F02319 /* cl-openssl */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 6DDCC79A2649577000F02319 /* XCRemoteSwiftPackageReference "openssl-apple" */;
-			productName = "cl-openssl";
-		};
-		6DDCC79D2649578200F02319 /* cl-openssl */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 6DDCC79A2649577000F02319 /* XCRemoteSwiftPackageReference "openssl-apple" */;
-			productName = "cl-openssl";
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 738B81062239809D00A9947C /* Project object */;
 }
